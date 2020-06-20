@@ -1,0 +1,9 @@
+<!--Pages/home/home.wxml-->
+<text>Hello {{name}}</text>
+<button
+  size="mini"
+  open-type="getUserInfo"
+  bindgetuserinfo="handleGetUserInfo">获取授权</button>
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<map class="map" longitude="116.11" latitude="39.6"></map>  
