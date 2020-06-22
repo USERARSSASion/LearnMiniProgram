@@ -8,5 +8,8 @@ Page({
   },
   handleGetUserInfo(event) {
     console.log(event)
+  },
+  tabControlClick(event) {
+    console.log(event.detail, "++++++++")
   }
 })
