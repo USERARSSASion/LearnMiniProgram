@@ -3,7 +3,8 @@
     "Pages/home/home",
     "Pages/wxs/wxs",
     "Pages/profile/profile",
-    "Pages/category/category"
+    "Pages/category/category",
+    "Pages/cart/cart"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",
@@ -27,6 +28,18 @@
         "text": "分类",
         "iconPath": "assets/tabbar/category.png",
         "selectedIconPath": "assets/tabbar/category_active.png"
+      },
+      {
+        "pagePath": "Pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assets/tabbar/shopcart.png",
+        "selectedIconPath": "assets/tabbar/shopcart_active.png"
+      },
+      {
+        "pagePath": "Pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/tabbar/profile.png",
+        "selectedIconPath": "assets/tabbar/profile_active.png"
       }
     ]
   },

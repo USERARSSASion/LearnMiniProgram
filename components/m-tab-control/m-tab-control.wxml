@@ -4,7 +4,7 @@
       class='tab-item {{currentIndex === index ? "active" : ""}}'
       data-index="{{index}}"
       bind:tap="handleItemClick">
-        <text>{{title}}</text>
+        <text class="item-text">{{title}}</text>
       </view>
   </block>
 </view>

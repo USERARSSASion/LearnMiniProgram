@@ -1,5 +1,9 @@
 {
   "usingComponents": {
-    "m-tab-control": "/components/m-tab-control/m-tab-control"
+    "m-recommend": "/Pages/home/childCpns/m-recommend/m-recommend",
+    "m-tab-control": "/components/m-tab-control/m-tab-control",
+    "m-swiper": "/components/m-swiper/m-swiper",
+    "m-goods": "/components/m-goods/m-goods",
+    "m-back-top": "/components/m-back-top/m-back-top"
   }
 }

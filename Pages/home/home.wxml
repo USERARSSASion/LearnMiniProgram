@@ -1,13 +1,24 @@
-<!--Pages/home/home.wxml-->
-<!-- <text>Hello {{name}}</text>
-<button
-  size="mini"
-  open-type="getUserInfo"
-  bindgetuserinfo="handleGetUserInfo">获取授权</button>
-<open-data type="userNickName"></open-data>
-<open-data type="userAvatarUrl"></open-data>
-<map class="map" longitude="116.11" latitude="39.6"></map>   -->
+<!-- 轮播图 -->
+<m-swiper list="{{banners}}" />
 
-<m-tab-control 
-  titles="{{['1', '2', '3']}}"
-  bind:itemClick="tabControlClick"/>
+<!-- 推荐数据的展示 -->
+<m-recommend recommends="{{recommends}}" bind:imageload="handleImageload" />
+
+<!-- 展示本周流行 -->
+<view class="popular">
+  <image src="/assets/home/recommend_bg.jpg" mode="widthFix" />
+</view>
+
+<!-- tab-controller -->
+<m-tab-control titles="{{titles}}" 
+  bind:itemClick="handleItemClick"
+  id="tab-control"
+  class="{{isTabFixed ? 'fixed' : ''}}" />
+<m-tab-control titles="{{titles}}" wx:if="{{isTabFixed}}" />
+
+<!-- 展示商品数据 -->
+<m-goods goods="{{goods[currentType].list}}" />
+
+<!-- 返回顶部 -->
+<!-- hidden: 对自定义组件是无效的 -->
+<m-back-top wx:if="{{showBackTop}}" />
